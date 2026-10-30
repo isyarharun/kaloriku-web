@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  body { width: 1200px; height: 630px; margin: 0; overflow: hidden; background: radial-gradient(120% 120% at 85% 10%, #E7F6DC 0%, #F7FAF5 55%); }
+  .og { position: relative; height: 630px; padding: 44px 64px; display: grid; grid-template-columns: 1.08fr .92fr; gap: 30px; align-items: center; }
+  .og-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; }
+  .og-logo img { width: 52px; height: 52px; border-radius: 15px; box-shadow: 0 10px 24px -12px rgba(47,158,30,.9); }
+  .og-logo span { font-weight: 800; font-size: 1.6rem; color: var(--ink); letter-spacing: -.03em; }
+  .og-logo span b { color: var(--green); font-weight: 800; }
+  .og h1 { font-size: 62px; line-height: 1.04; letter-spacing: -.035em; }
+  .og p { margin-top: 20px; font-size: 23px; color: var(--body); max-width: 520px; line-height: 1.45; }
+  .og-pill { display: inline-flex; align-items: center; gap: 10px; background: var(--tint); color: var(--green-dark); font-weight: 800; font-size: 17px; letter-spacing: .08em; text-transform: uppercase; padding: 10px 18px; border-radius: 999px; margin-bottom: 22px; }
+  .og-pill i { width: 9px; height: 9px; border-radius: 50%; background: var(--green); }
+  .og-art { position: relative; height: 100%; }
+  .og-art .phone { position: absolute; width: 206px; padding: 8px; border-radius: 33px; }
+  .og-art .phone-screen { border-radius: 26px; }
+  .og-art .p1 { right: 22px; top: 46px; transform: rotate(-3deg); }
+  .og-art .p2 { right: 120px; top: 96px; transform: rotate(4deg); z-index: 2; box-shadow: 0 50px 90px -40px rgba(20,50,12,.6); }
+  .og-badge { position: absolute; z-index: 3; left: -10px; bottom: 6px; background: #fff; border: 1px solid var(--line); border-radius: 15px; padding: 10px 14px; box-shadow: var(--shadow-md); font-weight: 800; color: var(--orange); font-size: 18px; }
+  .og-badge small { font-size: 12px; color: var(--muted); display: block; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="og">
+    <div>
+      <div class="og-logo"><img src="../assets/img/logo-512.png" alt=""><span>Kalori<b>Ku</b></span></div>
+      <div class="og-pill"><i></i> Pelacak kalori dengan AI</div>
+      <h1>Foto makananmu,<br><span class="hl">AI hitung kalorinya.</span></h1>
+      <p>Kenali hidangan apa pun dari satu foto — kalori langsung tercatat.</p>
+    </div>
+    <div class="og-art">
+      <div class="phone p1"><div class="phone-screen"><img src="../assets/img/screen-history.webp" alt=""></div></div>
+      <div class="phone p2"><div class="phone-screen"><img src="../assets/img/screen-home.webp" alt=""></div></div>
+      <div class="og-badge"><small>Makanan hari ini</small>4 · 1.310 kkal</div>
+    </div>
+  </div>
+</body>
+</html>

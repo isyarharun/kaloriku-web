@@ -1,0 +1,14 @@
+{
+  "name": "KaloriKu — AI Calorie Tracker",
+  "short_name": "KaloriKu",
+  "description": "AI calorie tracker that counts calories from a photo.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F7FAF5",
+  "theme_color": "#65C32F",
+  "icons": [
+    { "src": "/assets/img/logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/logo-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/img/logo-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
