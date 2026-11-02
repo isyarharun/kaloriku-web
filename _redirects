@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects (path-only, tanpa host).
+# URL bahasa Inggris tanpa garis miring ditutup rapat ke versi kanonik.
+/en /en/ 301

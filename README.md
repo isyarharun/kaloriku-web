@@ -42,16 +42,23 @@ Tanpa argumen, skrip menampilkan domain yang sedang terpasang.
 
 ## Deploy
 
-GitHub Pages:
+**Cloudflare Pages (dipakai):**
 
-1. Buat repo baru, push isi folder ini ke branch `main`.
+1. Tambahkan domain ke Cloudflare (Free), lalu ganti nameserver di registrar.
+2. Workers & Pages → Create → Pages → Connect to Git → repo `kaloriku-web`.
+   Framework preset `None`, build command kosong, output directory `/`.
+3. Custom domains: `kaloriku.id` dan `www.kaloriku.id` (CNAME dibuat otomatis).
+4. `_headers` mengatur cache aset + header keamanan; `_redirects` menutup `/en` → `/en/`.
+5. Setelah domain aktif: `python3 scripts/set-domain.py kaloriku.id` lalu push,
+   dan verifikasi dengan `python3 scripts/check-live.py kaloriku.id`.
+
+GitHub Pages (alternatif):
+
+1. Push isi folder ini ke branch `main`.
 2. Settings → Pages → Source: `main` / root. File `CNAME` sudah berisi domain.
 3. Di DNS registrar: `A` record ke `185.199.108.153`, `185.199.109.153`,
    `185.199.110.153`, `185.199.111.153`; `CNAME www` ke `<user>.github.io`.
    Aktifkan "Enforce HTTPS" setelah sertifikat terbit.
-
-Cloudflare Pages (kalau DNS di Cloudflare): connect repo, framework preset "None",
-output directory `/`. Tambahkan custom domain di dashboard; CNAME tidak diperlukan.
 
 ## Aset
 
