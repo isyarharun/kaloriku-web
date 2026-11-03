@@ -19,6 +19,17 @@
   </url>
   <url>
     <loc>https://kaloriku.id/privasi/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://kaloriku.id/privasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaloriku.id/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kaloriku.id/privasi/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kaloriku.id/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://kaloriku.id/privasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kaloriku.id/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kaloriku.id/privasi/"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
