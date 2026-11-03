@@ -15,6 +15,7 @@
   },
   "routes": [
     { "pattern": "kaloriku.id", "custom_domain": true },
-    { "pattern": "www.kaloriku.id", "custom_domain": true }
+    { "pattern": "www.kaloriku.id", "custom_domain": true },
+    { "pattern": "www.kaloriku.com", "custom_domain": true }
   ]
 }
