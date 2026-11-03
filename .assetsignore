@@ -9,3 +9,4 @@ README.md
 CNAME
 wrangler.jsonc
 scripts/**
+src/**

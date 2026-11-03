@@ -1,13 +1,20 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kaloriku-web",
+  "main": "src/index.js",
   "compatibility_date": "2026-11-02",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true,
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  }
+  },
+  "routes": [
+    { "pattern": "kaloriku.id", "custom_domain": true },
+    { "pattern": "www.kaloriku.id", "custom_domain": true }
+  ]
 }
