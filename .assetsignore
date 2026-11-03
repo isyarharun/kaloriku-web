@@ -1,0 +1,11 @@
+# Jangan pernah disajikan sebagai aset publik.
+# (Workers Static Assets: berkas yang cocok dengan pola di sini tidak diunggah.)
+.git
+.gitignore
+.assetsignore
+.wrangler
+node_modules
+README.md
+CNAME
+wrangler.jsonc
+scripts/**
